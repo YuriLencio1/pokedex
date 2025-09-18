@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: linear-gradient(to bottom, #6ab7f5, #fff);
+    text-align: center;
+    min-height: 100vh;
+}
+
+main{
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
+   
+}
+
+.pokedexI{
+    width: 100%;
+    max-width: 425px ;
+    z-index: 1;
+    
+}
+
+.pokemon_image{ 
+    position: absolute;
+    left: 42.5%;
+    bottom: 52%;
+    z-index: 2;
+    height: 12%;
+    transform: translate(-50%, 25%);
+}
+
+.pokemon_data{
+    position: absolute;
+    bottom: 40%;
+    z-index: 2;
+    left: 30%;
+    color: #333;
+    text-transform: capitalize;
+    font-size: clamp(8px, 5vw, 28px);
+    
+}
+
+.form{
+    position: absolute;
+    z-index: 2;
+    bottom: 28%;
+    left: 25%;
+}
