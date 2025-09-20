@@ -19,13 +19,13 @@ main {
   position: relative;
 }
 
-.pokedexI {
+.pokedex_imagem {
   width: 100%;
   max-width: 425px;
   z-index: 1;
 }
 
-.pokemon_image {
+.pokemon_gif {
   position: absolute;
   left: 42.5%;
   bottom: 52%;
