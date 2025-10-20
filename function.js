@@ -60,10 +60,11 @@ pokemonNext.addEventListener("click", () =>{
 );
 
 pokemonPrev.addEventListener("click", () =>{
+  if(searchpokemon>1){
   searchpokemon -= 1;
   renderPokemon(searchpokemon);
   }
-
+}
 );
   
 
