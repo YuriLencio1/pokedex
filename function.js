@@ -53,11 +53,11 @@ pokemonform.addEventListener("submit", (event) => {
 });
 
 pokemonNext.addEventListener("click", () =>{
-  if(searchpokemon <650){
+
   searchpokemon += 1;
   renderPokemon(searchpokemon);
   }
-}
+
 );
 
 pokemonPrev.addEventListener("click", () =>{
