@@ -7,6 +7,9 @@ const pokemonInput = document.querySelector(".nameornumber");
 const pokemonNext = document.querySelector(".btn-next");
 const pokemonPrev = document.querySelector(".btn-prev");
 
+let searchpokemon = 1;
+
+
 const fetchPokemon = async (pokemon) => {
   const APIpokemon = await fetch(
     `https://pokeapi.co/api/v2/pokemon/${pokemon}`
@@ -49,13 +52,17 @@ pokemonform.addEventListener("submit", (event) => {
   pokemonInput.value = "";
 });
 
-pokemonNext.addEventListener("click", () =>
-  alert('next clicked')
+pokemonNext.addEventListener("click", () =>{
+  searchpokemon += 1;
+  renderPokemon(searchpokemon);
+  }
 
 );
 
-pokemonPrev.addEventListener("click", () =>
-  alert('prev clicked')
+pokemonPrev.addEventListener("click", () =>{
+  searchpokemon -= 1;
+  renderPokemon(searchpokemon);
+  }
 
 );
   
