@@ -36,6 +36,7 @@ const renderPokemon = async (pokemon) => {
       data["sprites"]["versions"]["generation-v"]["black-white"]["animated"][
         "front_default"
       ];
+      searchpokemon = data.id
   } else {
     pokemonGif.style.display = "none"
     pokemonName.innerHTML = "Não encontrado";
@@ -53,11 +54,11 @@ pokemonform.addEventListener("submit", (event) => {
 });
 
 pokemonNext.addEventListener("click", () =>{
-
+if(searchpokemon < 649){
   searchpokemon += 1;
   renderPokemon(searchpokemon);
   }
-
+}
 );
 
 pokemonPrev.addEventListener("click", () =>{
